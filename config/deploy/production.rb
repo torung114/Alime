@@ -1,15 +1,6 @@
 role :app, %w{198.199.65.105}
 role :web, %w{198.199.65.105}
 
-server '198.199.65.105',
-  user: 'harry',
-  roles: %w{web app},
-  port: 22,
-  ssh_options: {
-    keys: %w(~/.ssh/id_rsa),
-    forward_agent: true
-  }
-
 set :rails_env, :production
 set :conditionally_migrate, true
 
