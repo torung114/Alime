@@ -105,7 +105,6 @@ a.inverse:hover {
   font: 500 13px/32px "Montserrat", sans-serif;
     -webkit-transition: border .3s ease, background-color .3s ease, color .3s ease;
     -moz-transition: border .3s ease, background-color .3s ease, color .3s ease;
-    transition: border .3s ease, background-color .3s ease, color .3s ease;
 }
 
 .button-solid:hover {
@@ -128,7 +127,6 @@ a.inverse:hover {
   font: 500 13px/32px "Montserrat", sans-serif;
     -webkit-transition: border .3s ease, background-color .3s ease, color .3s ease;
     -moz-transition: border .3s ease, background-color .3s ease, color .3s ease;
-    transition: border .3s ease, background-color .3s ease, color .3s ease;
 }
 
 .button-outline:hover {
@@ -473,7 +471,6 @@ header .header-content .fa-angle-down {
   color: #ff631e;
     -webkit-transition: all .2s;
     -moz-transition: all .2s;
-    transition: all .2s;
 }
 
 header .header-content .fa-angle-down:hover {
@@ -552,7 +549,6 @@ header .header-content .fa-angle-down:hover {
   font: 500 17px/44px "Montserrat", sans-serif;
     -webkit-transition: border .3s ease, background-color .3s ease, color .3s ease;
     -moz-transition: border .3s ease, background-color .3s ease, color .3s ease;
-    transition: border .3s ease, background-color .3s ease, color .3s ease;
 }
 
 .solutions .nav-pills li.active a,
@@ -751,7 +747,6 @@ header .header-content .fa-angle-down:hover {
   margin: 0px;
   -webkit-transition: all 0.3s; 
   -moz-transition: all 0.3s; 
-  transition: all 0.3s;
 }
 
 .products .product-container .image-container img:hover {
@@ -853,7 +848,6 @@ header .header-content .fa-angle-down:hover {
   opacity: 0;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
   -webkit-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
   -moz-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
   -ms-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
@@ -886,7 +880,6 @@ header .header-content .fa-angle-down:hover {
   opacity: 0;
   -webkit-transition: opacity 0.3s ease-out; 
   -moz-transition: opacity 0.3s ease-out; 
-  transition: opacity 0.3s ease-out;
 }
 
 /* animate in */
@@ -925,7 +918,6 @@ header .header-content .fa-angle-down:hover {
   background-color: #fff;
     -webkit-transition: border .3s ease, background-color .3s ease;
     -moz-transition: border .3s ease, background-color .3s ease;
-    transition: border .3s ease, background-color .3s ease;
 }
 
 .pricing .pricing-pane h3 {
@@ -1048,7 +1040,6 @@ header .header-content .fa-angle-down:hover {
   cursor: pointer;
     -webkit-transition: background-color .3s ease, color .3s ease;
     -moz-transition: background-color .3s ease, color .3s ease;
-    transition: background-color .3s ease, color .3s ease;
 }
 
 .projects .button-group a:hover {
@@ -1088,7 +1079,6 @@ header .header-content .fa-angle-down:hover {
   margin: 0px;
   -webkit-transition: all 0.3s; 
   -moz-transition: all 0.3s; 
-  transition: all 0.3s;
 }
 
 .projects .grid .element-item:hover img {
@@ -1109,7 +1099,6 @@ header .header-content .fa-angle-down:hover {
   opacity: 1;
   -webkit-transition: all 0.3s; 
   -moz-transition: all 0.3s 
-  transition: all 0.3s;
 }
 
 .projects .grid .element-item .element-item-overlay span { 
@@ -1392,7 +1381,6 @@ header .header-content .fa-angle-down:hover {
   text-align: center;
   -webkit-transition: opacity .3s ease;
   -moz-transition: opacity .3s ease;
-  transition: opacity .3s ease;
 }
 
 .team .team-member .image-container:hover .hover-overlay {  
@@ -1415,14 +1403,12 @@ header .header-content .fa-angle-down:hover {
   color: #fff;
   -webkit-transition: color .3s ease;
   -moz-transition: color .3s ease;
-  transition: color .3s ease;
 }
 
 .team .team-member .image-container .hover-overlay .fa-stack .fa-stack-1x {
   color: #ff631e;
   -webkit-transition: color .3s ease;
   -moz-transition: color .3s ease;
-  transition: color .3s ease;
 }
 
 .team .team-member .image-container .hover-overlay .fa-stack:hover .fa-circle {
@@ -1482,7 +1468,6 @@ header .header-content .fa-angle-down:hover {
   font: 500 15px/0.1em "Montserrat", sans-serif;
     -webkit-transition: background-color .3s ease, color .3s ease;
     -moz-transition: background-color .3s ease, color .3s ease;
-    transition: background-color .3s ease, color .3s ease;
 }
 
 .newsletter form button:hover {
@@ -1589,7 +1574,6 @@ header .header-content .fa-angle-down:hover {
   font: 500 15px/1em "Montserrat", sans-serif;
     -webkit-transition: background-color .3s ease, color .3s ease;
     -moz-transition: background-color .3s ease, color .3s ease;
-    transition: background-color .3s ease, color .3s ease;
 }
 
 .contact form button:hover {
@@ -1629,7 +1613,6 @@ header .header-content .fa-angle-down:hover {
     color: #ff631e;
     -webkit-transition: color .3s ease;
     -moz-transition: color .3s ease;
-    transition: color .3s ease;
 }
 
 .footer .social-icons-container .fa-stack a:hover .fa-stack-1x,
@@ -1710,7 +1693,6 @@ a:hover.back-to-top {
     background: transparent;
     -webkit-transition: border-bottom .3s ease-in-out,background .3s ease-in-out,padding .3s ease-in-out;
         -moz-transition: border-bottom .3s ease-in-out,background .3s ease-in-out,padding .3s ease-in-out;
-        transition: border-bottom .3s ease-in-out,background .3s ease-in-out,padding .3s ease-in-out;
     -webkit-backface-visibility: hidden;
     }
   
@@ -1740,7 +1722,6 @@ a:hover.back-to-top {
     padding: 13px 3px 5px 3px;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
   }
   
   .navbar .nav.navbar-nav li.active a,
@@ -1821,7 +1802,6 @@ a:hover.back-to-top {
     opacity: 0;
     -webkit-transition: opacity .3s ease;
     -moz-transition: opacity .3s ease;
-    transition: opacity .3s ease;
   }
 
   .projects .grid .element-item .element-item-overlay span { 
