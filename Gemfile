@@ -38,6 +38,17 @@ gem 'bootstrap-sass'
 gem 'jquery-rails'
 gem 'swiper-rails'
 gem 'font-awesome-rails'
+gem 'passenger',"~> 5.0.28"
+gem 'dotenv-rails'
+
+group :development do
+  # capistrano for deploying to the server
+  gem 'capistrano-rails'
+  gem 'capistrano-rvm'
+  gem 'capistrano3-unicorn'
+  gem 'letter_opener'
+  gem 'pry'
+end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
