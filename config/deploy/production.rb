@@ -2,7 +2,7 @@ role :app, %w{198.199.65.105}
 role :web, %w{198.199.65.105}
 
 server '198.199.65.105',
-  user: 'torung',
+  user: 'harry',
   roles: %w{web app},
   port: 22,
   ssh_options: {
