@@ -103,7 +103,6 @@ a.inverse:hover {
   background-color: #ff631e;
   color: #fff;
   font: 500 13px/32px "Montserrat", sans-serif;
-  -o-transition: border .3s ease, background-color .3s ease, color .3s ease;
     -webkit-transition: border .3s ease, background-color .3s ease, color .3s ease;
     -moz-transition: border .3s ease, background-color .3s ease, color .3s ease;
     transition: border .3s ease, background-color .3s ease, color .3s ease;
@@ -127,7 +126,6 @@ a.inverse:hover {
   background-color: transparent;
   color: #464646;
   font: 500 13px/32px "Montserrat", sans-serif;
-  -o-transition: border .3s ease, background-color .3s ease, color .3s ease;
     -webkit-transition: border .3s ease, background-color .3s ease, color .3s ease;
     -moz-transition: border .3s ease, background-color .3s ease, color .3s ease;
     transition: border .3s ease, background-color .3s ease, color .3s ease;
@@ -473,7 +471,6 @@ header .header-content .button-solid {
 header .header-content .fa-angle-down {
   margin-top: 40px;
   color: #ff631e;
-  -o-transition: all .2s;
     -webkit-transition: all .2s;
     -moz-transition: all .2s;
     transition: all .2s;
@@ -553,7 +550,6 @@ header .header-content .fa-angle-down:hover {
   background-color: #fff;
   color: #464646;
   font: 500 17px/44px "Montserrat", sans-serif;
-  -o-transition: border .3s ease, background-color .3s ease, color .3s ease;
     -webkit-transition: border .3s ease, background-color .3s ease, color .3s ease;
     -moz-transition: border .3s ease, background-color .3s ease, color .3s ease;
     transition: border .3s ease, background-color .3s ease, color .3s ease;
@@ -857,7 +853,6 @@ header .header-content .fa-angle-down:hover {
   opacity: 0;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
-  -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   -webkit-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
   -moz-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
@@ -891,7 +886,6 @@ header .header-content .fa-angle-down:hover {
   opacity: 0;
   -webkit-transition: opacity 0.3s ease-out; 
   -moz-transition: opacity 0.3s ease-out; 
-  -o-transition: opacity 0.3s ease-out; 
   transition: opacity 0.3s ease-out;
 }
 
@@ -929,7 +923,6 @@ header .header-content .fa-angle-down:hover {
   border: 1px solid #464646;
   border-radius: 1px;
   background-color: #fff;
-  -o-transition: border .3s ease, background-color .3s ease;
     -webkit-transition: border .3s ease, background-color .3s ease;
     -moz-transition: border .3s ease, background-color .3s ease;
     transition: border .3s ease, background-color .3s ease;
@@ -1053,7 +1046,6 @@ header .header-content .fa-angle-down:hover {
   background-color: #fff;
   color: #464646;
   cursor: pointer;
-  -o-transition: background-color .3s ease, color .3s ease;
     -webkit-transition: background-color .3s ease, color .3s ease;
     -moz-transition: background-color .3s ease, color .3s ease;
     transition: background-color .3s ease, color .3s ease;
@@ -1096,7 +1088,6 @@ header .header-content .fa-angle-down:hover {
   margin: 0px;
   -webkit-transition: all 0.3s; 
   -moz-transition: all 0.3s; 
-  -o-transition: all 0.3s; 
   transition: all 0.3s;
 }
 
@@ -1118,7 +1109,6 @@ header .header-content .fa-angle-down:hover {
   opacity: 1;
   -webkit-transition: all 0.3s; 
   -moz-transition: all 0.3s 
-  -o-transition: all 0.3s; 
   transition: all 0.3s;
 }
 
@@ -1400,7 +1390,6 @@ header .header-content .fa-angle-down:hover {
   color: #fff;
   opacity: 0;
   text-align: center;
-  -o-transition: opacity .3s ease;
   -webkit-transition: opacity .3s ease;
   -moz-transition: opacity .3s ease;
   transition: opacity .3s ease;
@@ -1424,7 +1413,6 @@ header .header-content .fa-angle-down:hover {
 
 .team .team-member .image-container .hover-overlay .fa-stack .fa-circle {
   color: #fff;
-  -o-transition: color .3s ease;
   -webkit-transition: color .3s ease;
   -moz-transition: color .3s ease;
   transition: color .3s ease;
@@ -1432,7 +1420,6 @@ header .header-content .fa-angle-down:hover {
 
 .team .team-member .image-container .hover-overlay .fa-stack .fa-stack-1x {
   color: #ff631e;
-  -o-transition: color .3s ease;
   -webkit-transition: color .3s ease;
   -moz-transition: color .3s ease;
   transition: color .3s ease;
@@ -1493,7 +1480,6 @@ header .header-content .fa-angle-down:hover {
   background-color: #ff631e;
   color: #fff;
   font: 500 15px/0.1em "Montserrat", sans-serif;
-  -o-transition: background-color .3s ease, color .3s ease;
     -webkit-transition: background-color .3s ease, color .3s ease;
     -moz-transition: background-color .3s ease, color .3s ease;
     transition: background-color .3s ease, color .3s ease;
@@ -1601,7 +1587,6 @@ header .header-content .fa-angle-down:hover {
   background-color: #ff631e;
   color: #fff;
   font: 500 15px/1em "Montserrat", sans-serif;
-  -o-transition: background-color .3s ease, color .3s ease;
     -webkit-transition: background-color .3s ease, color .3s ease;
     -moz-transition: background-color .3s ease, color .3s ease;
     transition: background-color .3s ease, color .3s ease;
@@ -1642,7 +1627,6 @@ header .header-content .fa-angle-down:hover {
 .footer .social-icons-container .fa-stack a .fa-stack-1x,
 .footer .social-icons-container .fa-stack a:hover .fa-stack-2x {
     color: #ff631e;
-  -o-transition: color .3s ease;
     -webkit-transition: color .3s ease;
     -moz-transition: color .3s ease;
     transition: color .3s ease;
@@ -1724,7 +1708,6 @@ a:hover.back-to-top {
         padding: 20px 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0);
     background: transparent;
-    -o-transition: border-bottom .3s ease-in-out,background .3s ease-in-out,padding .3s ease-in-out;
     -webkit-transition: border-bottom .3s ease-in-out,background .3s ease-in-out,padding .3s ease-in-out;
         -moz-transition: border-bottom .3s ease-in-out,background .3s ease-in-out,padding .3s ease-in-out;
         transition: border-bottom .3s ease-in-out,background .3s ease-in-out,padding .3s ease-in-out;
@@ -1755,7 +1738,6 @@ a:hover.back-to-top {
   .navbar .nav.navbar-nav.navbar-right li a {
     margin: 13px 12px 14px 12px;
     padding: 13px 3px 5px 3px;
-    -o-transition: all .2s ease-in-out;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -1837,7 +1819,6 @@ a:hover.back-to-top {
   
   .projects .grid .element-item .element-item-overlay { 
     opacity: 0;
-    -o-transition: opacity .3s ease;
     -webkit-transition: opacity .3s ease;
     -moz-transition: opacity .3s ease;
     transition: opacity .3s ease;
