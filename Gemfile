@@ -50,6 +50,7 @@ group :development do
   gem 'capistrano-rails',   require: false
   gem 'capistrano-rails-db'
   gem 'capistrano-rails-console'
+  gem 'capistrano-upload-config'
   gem 'capistrano-bundler', require: false
   gem 'capistrano3-puma',   require: false
   gem 'sshkit-sudo'
