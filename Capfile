@@ -23,4 +23,6 @@ require 'capistrano/upload-config'
 require 'sshkit/sudo'
 
 Dir.glob('lib/capistrano/tasks/*.rake').each { |r| import r }
-install_plugin Capistrano::Puma::Nginx
+install_plugin Capistrano::Puma # Default puma tasks
+install_plugin Capistrano::Puma::Jungle # if you need the jungle tasks
+install_plugin Capistrano::Puma::Nginx # if you want to upload a nginx site template
