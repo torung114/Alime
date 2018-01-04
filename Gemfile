@@ -46,9 +46,13 @@ group :development do
   # capistrano for deploying to the server
   gem 'capistrano',         require: false
   gem 'capistrano-rvm',     require: false
+  gem 'capistrano-nginx'
   gem 'capistrano-rails',   require: false
+  gem 'capistrano-rails-db'
+  gem 'capistrano-rails-console'
   gem 'capistrano-bundler', require: false
   gem 'capistrano3-puma',   require: false
+  gem 'sshkit-sudo'
   gem 'letter_opener'
   gem 'pry'
 end
