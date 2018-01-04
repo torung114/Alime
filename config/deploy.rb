@@ -28,16 +28,16 @@ set :puma_init_active_record, true  # Change to false when not using ActiveRecor
 # set :keep_releases, 5
 
 # Linked Files & Directories (Default None):
-set :linked_files, %w{config/database.yml}
+set :linked_files, fetch(:linked_files, []).push('config/secrets.yml', '.env')
 set :linked_dirs,  %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
 set :config_files, %w{config/database.yml config/secrets.yml}
 set :puma_conf, "#{shared_path}/config/puma.rb"
 set :rvm_ruby_version, '2.4.2'
 
 namespace :deploy do
-  before 'check:linked_files', 'config:push'
-  before 'check:linked_files', 'puma:config'
-  before 'check:linked_files', 'puma:nginx_config'
+  # before 'check:linked_files', 'config:push'
+  # before 'check:linked_files', 'puma:config'
+  # before 'check:linked_files', 'puma:nginx_config'
   after 'puma:smart_restart', 'nginx:restart'
 end
 
