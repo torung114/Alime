@@ -225,63 +225,6 @@
         $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
     }
   
-  
-  /* CONTACT FORM */
-   $("#ContactForm").validator().on("submit", function(event) {
-        if (event.isDefaultPrevented()) {
-            // handle the invalid form...
-            formCError();
-            submitCMSG(false, "Check if all fields are filled in!");
-        } else {
-            // everything looks good!
-            event.preventDefault();
-            submitCForm();
-        }
-    });
-
-    function submitCForm() {
-        // initiate variables with form content
-        var cfirstname = $("#cfirstname").val();
-        var clastname = $("#clastname").val();
-        var cemail = $("#cemail").val();
-    var cmessage = $("#cmessage").val();
-
-        $.ajax({
-            type: "POST",
-            url: "php/contactform-process.php",
-            data: "firstname=" + cfirstname + "&lastname=" + clastname + "&email=" + cemail + "&message=" + cmessage, 
-            success: function(text) {
-                if (text == "success") {
-                    formCSuccess();
-                } else {
-                    formCError();
-                    submitCMSG(false, text);
-                }
-            }
-        });
-    }
-
-    function formCSuccess() {
-        $("#ContactForm")[0].reset();
-        submitCMSG(true, "Message Submitted!")
-    }
-
-    function formCError() {
-        $("#ContactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-            $(this).removeClass();
-        });
-    }
-
-    function submitCMSG(valid, msg) {
-        if (valid) {
-            var msgClasses = "h3 text-center tada animated text-success";
-        } else {
-            var msgClasses = "h3 text-center text-danger";
-        }
-        $("#cmsgSubmit").removeClass().addClass(msgClasses).text(msg);
-    }
-  
-    
   /* REMOVES LONG FOCUS ON BUTTONS */
   $(".button, a, button").mouseup(function(){
     $(this).blur();

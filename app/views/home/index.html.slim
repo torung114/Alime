@@ -260,7 +260,7 @@ header#header
         .map-responsive
           iframe src="https://maps.google.com/maps?q=KiCoworking&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen
       .col-md-6
-        = simple_form_for :contact, url: send_contact_path, html: {id: "ContactForm"}, remote: true, method: "post"
+        = simple_form_for :contact, url: send_contact_path, html: {id: "ContactForm"}, method: "post"
           .form-group.same-line
             input#cfirstname.form-control type="text" placeholder="Name" required="" name="first_name"
           .form-group.same-line.middle

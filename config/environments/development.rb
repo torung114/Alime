@@ -30,6 +30,18 @@ Rails.application.configure do
   config.action_mailer.raise_delivery_errors = false
 
   config.action_mailer.perform_caching = false
+  
+  ActionMailer::Base.delivery_method = :smtp
+
+  ActionMailer::Base.smtp_settings = {
+    :address => "localhost",
+    :port => 25,
+    :domain => "alime.vn",
+    :user_name => "contact@alime.vn",
+    :password => "@Chanhta",
+    :authentication => "plain",
+    :enable_starttls_auto => false
+  }
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
