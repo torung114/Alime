@@ -64,14 +64,14 @@ Rails.application.configure do
 
   ActionMailer::Base.delivery_method = :smtp
 
-  ActionMailer::Base.smtp_settings = {
-    :address => "share-mail03.nhanhoa.com",
-    :port => 465,
-    :domain => "alime.vn",
-    :user_name => "contact@alime.vn",
-    :password => "@Chanhta",
-    :authentication => "login",
-    :enable_starttls_auto => true
+  config.action_mailer.smtp_settings = {
+    address:              'smtp.gmail.com',
+    port:                 587,
+    domain:               'alime.vn',
+    user_name:            'cesc1104@gmail.com',
+    password:             'mothaibabon',
+    authentication:       'plain',
+    enable_starttls_auto: true  
   }
 
   # Ignore bad email addresses and do not raise email delivery errors.
