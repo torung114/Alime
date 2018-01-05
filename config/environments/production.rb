@@ -65,7 +65,7 @@ Rails.application.configure do
   ActionMailer::Base.delivery_method = :smtp
 
   ActionMailer::Base.smtp_settings = {
-    :address => "localhost",
+    :address => "mail.alime.vn",
     :port => 25,
     :domain => "alime.vn",
     :user_name => "contact@alime.vn",
