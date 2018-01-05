@@ -53,7 +53,7 @@
     var swiper = new Swiper('.swiper-container-header', {
         spaceBetween: 0,
         centeredSlides: true,
-        autoplay: 2000,
+        autoplay: 5000,
         autoplayDisableOnInteraction: false
     });
   
