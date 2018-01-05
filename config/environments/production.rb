@@ -62,6 +62,18 @@ Rails.application.configure do
   # config.active_job.queue_name_prefix = "Alime_#{Rails.env}"
   config.action_mailer.perform_caching = false
 
+  ActionMailer::Base.delivery_method = :smtp
+
+  ActionMailer::Base.smtp_settings = {
+    :address => "localhost",
+    :port => 25,
+    :domain => "alime.vn",
+    :user_name => "contact@alime.vn",
+    :password => "@Chanhta",
+    :authentication => "plain",
+    :enable_starttls_auto => false
+  }
+
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   # config.action_mailer.raise_delivery_errors = false
