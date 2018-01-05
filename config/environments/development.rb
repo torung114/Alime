@@ -35,12 +35,12 @@ Rails.application.configure do
 
   ActionMailer::Base.smtp_settings = {
     :address => "mail.alime.vn",
-    :port => 25,
+    :port => 465,
     :domain => "alime.vn",
     :user_name => "contact@alime.vn",
     :password => "@Chanhta",
-    :authentication => :login,
-    :enable_starttls_auto => false
+    :authentication => "login",
+    :enable_starttls_auto => true
   }
 
   # Print deprecation notices to the Rails logger.

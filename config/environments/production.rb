@@ -66,12 +66,12 @@ Rails.application.configure do
 
   ActionMailer::Base.smtp_settings = {
     :address => "mail.alime.vn",
-    :port => 25,
+    :port => 465,
     :domain => "alime.vn",
     :user_name => "contact@alime.vn",
     :password => "@Chanhta",
-    :authentication => "plain",
-    :enable_starttls_auto => false
+    :authentication => "login",
+    :enable_starttls_auto => true
   }
 
   # Ignore bad email addresses and do not raise email delivery errors.
