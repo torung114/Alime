@@ -1658,7 +1658,6 @@ a.back-to-top {
   width: 42px;
   height: 42px;
   border-radius: 30px;
-  background: #000 asset-url("images/up-arrow.png") no-repeat center 47%;
   background-size: 18px 18px; 
   text-indent: -9999px;
 }
@@ -2085,4 +2084,8 @@ a:hover.back-to-top {
   .footer {
     padding-bottom: 10px;
   }
+}
+.turbolinks-progress-bar {
+  height: 5px;
+  background-color: red;
 }
