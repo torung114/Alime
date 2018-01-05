@@ -1574,7 +1574,7 @@ header .header-content .fa-angle-down:hover {
   border-radius: 1px;
 }
 
-.contact form button {
+.contact form input[type=submit] {
   display: block;
   height: 43px;
   width: 100%;
@@ -1585,9 +1585,10 @@ header .header-content .fa-angle-down:hover {
   font: 500 15px/1em "Montserrat", sans-serif;
     -webkit-transition: background-color .3s ease, color .3s ease;
     -moz-transition: background-color .3s ease, color .3s ease;
+  -webkit-appearance: none;
 }
 
-.contact form button:hover {
+.contact form input[type=submit]:hover {
   background-color: #fff;
   color: #ff631e;
 }

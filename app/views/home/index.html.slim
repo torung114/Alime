@@ -294,18 +294,17 @@ header#header
         .map-responsive
           iframe src="https://maps.google.com/maps?q=KiCoworking&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen
       .col-md-6
-        form#ContactForm[data-toggle="validator"]
+        = simple_form_for :contact, url: send_contact_path, html: {id: "ContactForm"}, remote: true, method: "post"
           .form-group.same-line
-            input#cfirstname.form-control[type="text" placeholder="Name" required]
+            input#cfirstname.form-control type="text" placeholder="Name" required="" name="first_name"
           .form-group.same-line.middle
-            input#clastname.form-control[type="text" placeholder="Phone" required]
+            input#clastname.form-control type="text" placeholder="Phone" required="" name="last_name"
           .form-group.same-line
-            input#cemail.form-control[type="email" placeholder="Email" required]
+            input#cemail.form-control type="email" placeholder="Email" required="" name="email"
           .form-group
-            textarea#cmessage.form-control[placeholder="Write your message here" rows="4" required]
+            textarea#cmessage.form-control placeholder="Write your message here" rows="4" required="" name="message"
           .form-group
-            button.button-small-solid[type="submit"]
-              | SUBMIT
+            input.button-small-solid type="submit" value="SUBMIT"
           .form-message
             #cmsgSubmit.h3.text-center.hidden
 .footer

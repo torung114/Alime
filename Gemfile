@@ -41,6 +41,7 @@ gem 'font-awesome-rails'
 gem 'passenger',"~> 5.0.28"
 gem 'dotenv-rails'
 gem 'pg'
+gem 'simple_form'
 
 group :development do
   # capistrano for deploying to the server
