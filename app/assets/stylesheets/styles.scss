@@ -404,7 +404,7 @@ header .header-content .swiper-container-header {
 }
   
 header .swiper-container-header .swiper-slide.first .slider-background {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("http://placehold.it/1920x1080/3a3a3a/fff/") center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), asset-url("slider-bg-1.jpg") center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -412,7 +412,7 @@ header .swiper-container-header .swiper-slide.first .slider-background {
 }
 
 header .swiper-container-header .swiper-slide.second .slider-background {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url("http://placehold.it/1920x1080/3a3a3a/fff/") center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), asset-url("slider-bg-2") center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -420,7 +420,7 @@ header .swiper-container-header .swiper-slide.second .slider-background {
 }
 
 header .swiper-container-header .swiper-slide.third .slider-background {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url("http://placehold.it/1920x1080/3a3a3a/fff/") center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), asset-url("slider-bg-3") center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -446,6 +446,7 @@ header .header-content .content-overlay {
 
 header .header-content h1 {
   color: #fff;
+  font-size: 48px;
 }
 
 header .header-content p.heading-paragraph {
