@@ -39,7 +39,7 @@ Rails.application.configure do
     :domain => "alime.vn",
     :user_name => "contact@alime.vn",
     :password => "@Chanhta",
-    :authentication => "plain",
+    :authentication => :login,
     :enable_starttls_auto => false
   }
 
