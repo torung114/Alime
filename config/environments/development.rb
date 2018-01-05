@@ -31,7 +31,7 @@ Rails.application.configure do
 
   config.action_mailer.perform_caching = false
   
-  ActionMailer::Base.delivery_method = :smtp
+  ActionMailer::Base.delivery_method = :letter_opener
 
   ActionMailer::Base.smtp_settings = {
     :address => "mail.alime.vn",

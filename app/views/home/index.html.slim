@@ -262,9 +262,9 @@ header#header
       .col-md-6
         = simple_form_for :contact, url: send_contact_path, html: {id: "ContactForm"}, method: "post"
           .form-group.same-line
-            input#cfirstname.form-control type="text" placeholder="Name" required="" name="first_name"
+            input#cfirstname.form-control type="text" placeholder="Name" required="" name="name"
           .form-group.same-line.middle
-            input#clastname.form-control type="text" placeholder="Phone" required="" name="last_name"
+            input#clastname.form-control type="text" placeholder="Phone" required="" name="phone"
           .form-group.same-line
             input#cemail.form-control type="email" placeholder="Email" required="" name="email"
           .form-group
