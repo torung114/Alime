@@ -568,16 +568,17 @@ header .header-content .fa-angle-down:hover {
   margin-bottom: 25px;
 }
 
-.solutions .tab-content .software-box .fa {
-    float: left;
-  color: #ff631e;
-  font-size: 2.6em;
+.solutions .tab-content .software-box img {
+  float: left;
+  display: inline-block;
+  width: 40px;
 }
 
 .solutions .tab-content .software-box h4 {
   margin-top: 3px;
   margin-right: 20px;
-  margin-left: 57px;
+  margin-left: 14px;
+  display: inline-block;
 }
 
 .solutions .tab-content .software-box p {

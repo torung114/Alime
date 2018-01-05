@@ -100,52 +100,47 @@ header#header
 #solutions.solutions
   .container
     h2
-      | SOLUTIONS
+      | Why us?
     hr.under-heading
     .solutions-tabs
       ul.nav.nav-pills.nav-justified
         li.active
           a[href="#tab_a" data-toggle="tab"]
-            | SOFTWARE
-        li
-          a[href="#tab_b" data-toggle="tab"]
-            | HARDWARE
-        li
-          a[href="#tab_c" data-toggle="tab"]
-            | SERVICES
+            | Khác biệt và dành riêng cho bạn
     .tab-content
       #tab_a.tab-pane.tab-a.fade.in.active
         .row
           .col-lg-6
             .software-box.clearfix
-              i.fa.fa-rocket
+              = image_tag("sf-giao-trinh.svg")
               h4
-                | Better Performance
+                | Giáo trình
               p
-                | Accomplish more, faster with Vera's software application suite for agile startups and established corporate environments.
+                | Giáo trình được nghiên cứu chọn lọc dành riêng cho lĩnh vực IT (Information System)
             .software-box.clearfix
-              i.fa.fa-television
+              = image_tag("sf-ung-dung.svg")
               h4
-                | Complete Control
+                | Ứng dụng
               p
-                | Guide your company through rough and prosperous times with customizable digital dashboards, designed to offer you total control.
+                | Phương pháp đặc biệt với tính ứng dụng thực tế cao trong công việc và cuộc sống hàng ngày
             .software-box.clearfix
-              i.fa.fa-hdd-o
+              = image_tag("sf-mo-hinh.svg")
               h4
-                | Unlimited Storage
+                | Mô hình
               p
-                | Each software solution is accompanied by a healthy online storage package of 1TB for each administrator license you acquire.
+                | Mô hình tối ưu cho sự phát triển ngôn ngữ của từng cá nhân
             .software-box.clearfix
-              i.fa.fa-pie-chart
+              = image_tag("sf-moi-truong.svg")
               h4
-                | Reports Manager
+                | Môi trường
               p
-                | Enjoy detailed reports about your business based on real-time information provided by Vera's data gathering algorithms.
+                | 100% học viên học tập và làm việc trong ngành, tạo nên cộng đồng IT mạnh mẽ hỗ trợ lẫn nhau
           .col-lg-6
             .my-swiper-container
               .swiper-wrapper
                 .swiper-slide
                   a.popup-link[href="http://placehold.it/797x669/3a3a3a/fff/" data-effect="fadeIn"]
+                    / = image_tag("sf-sl-1.jpg", class: "img-responsive")
                     img.img-responsive[src="http://placehold.it/797x669/3a3a3a/fff/" alt="software image"]
                 .swiper-slide
                   a.popup-link[href="http://placehold.it/797x669/3a3a3a/fff/" data-effect="fadeIn"]
@@ -154,125 +149,23 @@ header#header
                   a.popup-link[href="http://placehold.it/797x669/3a3a3a/fff/" data-effect="fadeIn"]
                     img.img-responsive[src="http://placehold.it/797x669/3a3a3a/fff/" alt="software image"]
               .swiper-pagination
-      #tab_b.tab-pane.tab-b.fade
-        .row
-          .col-md-8
-            img.img-responsive[src="http://placehold.it/814x495/3a3a3a/fff/" alt="solutions image"]
-          .col-md-4
-            .right-pane
-              h3
-                | Reliable Hardware Infrastructure
-              p
-                | Vera's software solutions run on state of the art hardware platforms built for total performance and protected by fail-safe backup systems.
-              p
-                | Our efforts are focused on creating reliable business solutions for mission critical scenarios.
-              a.read-more[href="#your-link-here"]
-                | Find out more ››
-      #tab_c.tab-pane.tab-c.fade
-        .row
-          .col-md-4
-            .services-box.text-center
-              span.fa-stack.fa-3x
-                i.fa.fa-circle.fa-stack-2x
-                i.fa.fa-flag.fa-stack-1x.fa-inverse
-              h4
-                | Business Analysis
-              p
-                | Before any software solution proposal we analyze your operational processes and go through all of your business departments
-          .col-md-4
-            .services-box.text-center
-              span.fa-stack.fa-3x
-                i.fa.fa-circle.fa-stack-2x
-                i.fa.fa-desktop.fa-stack-1x.fa-inverse
-              h4
-                | Solution Design
-              p
-                | After we've gathered as much information as possible about your company we design your personalized software solution
-          .col-md-4
-            .services-box.text-center
-              span.fa-stack.fa-3x
-                i.fa.fa-circle.fa-stack-2x
-                i.fa.fa-code.fa-stack-1x.fa-inverse
-              h4
-                | Software Development
-              p
-                | We're counting on our highly experienced team of developers and team leaders to deliver highly optimized solutions
-        .row
-          .col-md-4
-            .services-box.text-center
-              span.fa-stack.fa-3x
-                i.fa.fa-circle.fa-stack-2x
-                i.fa.fa-user.fa-stack-1x.fa-inverse
-              h4
-                | Continuous Support
-              p
-                | After delivering the software solution we're making sure it's working at 100% all the time by providing quality support
-          .col-md-4
-            .services-box.text-center
-              span.fa-stack.fa-3x
-                i.fa.fa-circle.fa-stack-2x
-                i.fa.fa-globe.fa-stack-1x.fa-inverse
-              h4
-                | IT Outsourcing
-              p
-                | We offer high quality software development and IT outsourcing services for a selected range of customers and partners
-          .col-md-4
-            .services-box.last.text-center
-              span.fa-stack.fa-3x
-                i.fa.fa-circle.fa-stack-2x
-                i.fa.fa-handshake-o.fa-stack-1x.fa-inverse
-              h4
-                | Professional Services
-              p
-                | Vera's highly skilled professionals in design, development and marketing provide some of the best professional services
 #products.products
   .container.text-center
     h2
-      | PRODUCTS
+      | Courses
     hr.under-heading
     .row
-      .col-sm-4
+      .col-md-4.col-md-offset-4
         .product-container.first
           a.popup-with-move-anim[href="#product-1"]
 
           .image-container
             img.img-responsive[src="http://placehold.it/706x398/3a3a3a/fff/" alt="product image"]
           h4
-            | Lyra Landing Page
+            | SEEDS 
           p
-            | Lyra landing page template helps designers and developers promote apps
-          a.button-outline.popup-with-move-anim[href="#product-1"]
-            | DETAILS
-          a.button-solid[href=""]
-            | BUY
-      .col-sm-4
-        .product-container.middle
-          a.popup-with-move-anim[href="#product-2"]
-
-          .image-container
-            img.img-responsive[src="http://placehold.it/706x398/3a3a3a/fff/" alt="product image"]
-          h4
-            | Leon Landing Page
-          p
-            | Leon is the most popular product and it helps customers sell mobile apps
-          a.button-outline.popup-with-move-anim[href="#product-2"]
-            | DETAILS
-          a.button-solid[href=""]
-            | BUY
-      .col-sm-4
-        .product-container
-          a.popup-with-move-anim[href="#product-3"]
-
-          .image-container
-            img.img-responsive[src="http://placehold.it/706x398/3a3a3a/fff/" alt="product image"]
-          h4
-            | Zigo Landing Page
-          p
-            | Zigo is focused on building landing page templates for software applications
-          a.button-outline.popup-with-move-anim[href="#product-3"]
-            | DETAILS
-          a.button-solid[href=""]
-            | BUY
+            | Khóa học 10 buổi trải nghiệm "hiếm có" dành cho chuyên viên IT! (09/01 - 07/02)
+          
 #product-1.product-details-container.zoom-anim-dialog.mfp-hide
   .row
     button.mfp-close.x-button[title="Close (Esc)" type="button"]
