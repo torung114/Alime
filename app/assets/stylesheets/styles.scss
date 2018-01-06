@@ -2099,3 +2099,17 @@ form#ContactForm {
   margin-top: 30px;
   padding-top: 0;
 }
+ul.tab-over-view-list {
+  list-style: none;
+  li {
+    margin-left: 10px;
+  }
+  li:before {    
+    font-family: 'FontAwesome';
+    content: '\f005';
+    margin:0 5px 0 -15px;
+    color: #ff631e;
+    margin-right: 10px;
+    margin-left: -24px;
+  }
+}

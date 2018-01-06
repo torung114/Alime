@@ -19,26 +19,17 @@
       #myNavbar.navbar-collapse.collapse
         ul.nav.navbar-nav.navbar-right
           li.active
-            a.page-scroll href="#header" Home
+            a.page-scroll href="#header" Hello
           li
-            a.page-scroll href="#solutions" Solutions
+            a.page-scroll href="#solutions" Why us?
           li
-            a.page-scroll[href="#products"] Products
+            a.page-scroll[href="#products"] Courses
           li
-            a.page-scroll[href="#pricing"]
-              | Pricing
+            a.page-scroll[href="#about"] About
           li
-            a.page-scroll[href="#projects"]
-              | Projects
+            a.page-scroll[href="#team"] Instructors
           li
-            a.page-scroll[href="#about"]
-              | About
-          li
-            a.page-scroll[href="#team"]
-              | Team
-          li
-            a.page-scroll[href="#contact"]
-              | Contact
+            a.page-scroll[href="#contact"] Contact
 header#header
   .flex-container-wrapper
     .header-content
@@ -134,28 +125,28 @@ header#header
           p
             | Khóa học 10 buổi trải nghiệm "hiếm có" dành cho chuyên viên IT! (09/01 - 07/02)
           
-#about.about.clearfix
-  .about-image-pane
-    = image_tag("about-1.png")
+/ #about.about.clearfix
+/   .about-image-pane
+/     = image_tag("about-1.png")
 
-  .about-text-pane
-    .about-text-pane-holder.clearfix
-      h2.text-center
-        | ABOUT
-      hr.under-heading
-      p
-        | Khóa học SEEDS được thiết kế dành cho những người đang hoặc sẽ trở thành chuyên gia trong lĩnh vực IT nhưng khả năng ngôn ngữ còn hạn chế để đáp ứng cho môi trường làm việc quốc tế.
-      p 
-        | Thông qua khóa học, bên cạnh hiểu được những cấu trúc cơ bản và phát triển khả năng phát âm Tiếng Anh, học viên sẽ cảm thấy thích thú vì kiến thức thu được có thể vận dụng ngay trong công việc và cuộc sống hàng ngày một cách linh hoạt.
-      p 
-        | Nắm bắt được nhu cầu của cộng đồng IT qua khảo sát, chúng tôi đặc biệt lựa chọn chủ đề giảng dạy như sau:
-      ul
-        li
-          | Experienced team of software and business developers
-        li
-          | Skill-set ranges from design and development to marketing 
-        li
-          | Our mission is to create reliable bussiness applications
+/   .about-text-pane
+/     .about-text-pane-holder.clearfix
+/       h2.text-center
+/         | ABOUT
+/       hr.under-heading
+/       p
+/         | Khóa học SEEDS được thiết kế dành cho những người đang hoặc sẽ trở thành chuyên gia trong lĩnh vực IT nhưng khả năng ngôn ngữ còn hạn chế để đáp ứng cho môi trường làm việc quốc tế.
+/       p 
+/         | Thông qua khóa học, bên cạnh hiểu được những cấu trúc cơ bản và phát triển khả năng phát âm Tiếng Anh, học viên sẽ cảm thấy thích thú vì kiến thức thu được có thể vận dụng ngay trong công việc và cuộc sống hàng ngày một cách linh hoạt.
+/       p 
+/         | Nắm bắt được nhu cầu của cộng đồng IT qua khảo sát, chúng tôi đặc biệt lựa chọn chủ đề giảng dạy như sau:
+/       ul
+/         li
+/           | Experienced team of software and business developers
+/         li
+/           | Skill-set ranges from design and development to marketing 
+/         li
+/           | Our mission is to create reliable bussiness applications
       
       / .progress
       /   .progress-bar.progress-bar-success[role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 100%"]
@@ -166,11 +157,82 @@ header#header
       / .progress
       /   .progress-bar.progress-bar-success[role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 95%"]
       /     |  Data Acquisition 95% 
+#about.about.clearfix
+  #solutions.solutions style="padding-top:0;"
+    .container
+      h2 ABOUT
+      hr.under-heading/
+      /! Tabs
+      .solutions-tabs
+        ul.nav.nav-pills.nav-justified
+          li.active
+            a data-toggle="tab" href="#tab_overview"  OVERVIEW
+          li
+            a data-toggle="tab" href="#tab_details"  DETAILS
+      /! Tab Content
+      .tab-content
+        /! Tab_a
+        #tab_overview.tab-pane.tab-a.fade.in.active
+          .row
+            .col-lg-6
+              ul.tab-over-view-list 
+                li Khóa học SEEDS được thiết kế dành cho những người đang hoặc sẽ trở thành chuyên gia trong lĩnh vực IT nhưng khả năng ngôn ngữ còn hạn chế để đáp ứng cho môi trường làm việc quốc tế."
+                br
+                li Thông qua khóa học, bên cạnh hiểu được những cấu trúc cơ bản và phát triển khả năng phát âm Tiếng Anh, học viên sẽ cảm thấy thích thú vì kiến thức thu được có thể vận dụng ngay trong công việc và cuộc sống hàng ngày một cách linh hoạt.
+            .col-lg-6
+              /! Image Gallery Swiper
+              .my-swiper-container
+                .swiper-wrapper
+                  .swiper-slide
+                    a.popup-link data-effect="fadeIn" href="http://placehold.it/797x669/3a3a3a/fff/" 
+                      img.img-responsive alt=("software image") src="http://placehold.it/797x669/3a3a3a/fff/" /
+                  .swiper-slide
+                    a.popup-link data-effect="fadeIn" href="http://placehold.it/797x669/3a3a3a/fff/" 
+                      img.img-responsive alt=("software image") src="http://placehold.it/797x669/3a3a3a/fff/" /
+                  .swiper-slide
+                    a.popup-link data-effect="fadeIn" href="http://placehold.it/797x669/3a3a3a/fff/" 
+                      img.img-responsive alt=("software image") src="http://placehold.it/797x669/3a3a3a/fff/" /
+                /! Add Pagination
+                .swiper-pagination
+              /! end of image gallery swiper
+        /! end of tab_a
+        /! Tab_b
+        #tab_details.tab-pane.tab-b.fade
+          .row
+            .col-md-6
+              img.img-responsive alt=("solutions image") src="http://placehold.it/814x495/3a3a3a/fff/" /
+            .col-md-6
+              .right-pane
+                .p "Nắm bắt được nhu cầu của cộng đồng IT qua khảo sát, chúng tôi đặc biệt lựa chọn chủ đề giảng dạy như sau:
+                .title Listening - Speaking Focus (Beginner level)
+                .text 1. Friends
+                .text 2. Food
+                .text 3. Jobs
+                .text 4. Travel
+                .text 5. Relationships
+                .text 6. Shopping
+
+                .title Reading - Writing Focus (Intermediate level)
+                .text 7. Career
+                .text 8. Personal Skills
+                .text 9. Business Communications
+                .text 10. Technology
+
+                p 4 kỹ năng Nghe - Nói - Đọc - Viết (Listening - Speaking - Reading - Writing) được rèn luyện trong từng buổi học, tuy nhiên mỗi buổi học sẽ dồn trọng tâm cho 2 kĩ năng như chú thích trên.
+
+                p Khóa học bao gồm các bài giảng về Ngữ pháp (cấu trúc câu, 7 thì cơ bản trong tiếng Anh, câu bị động, mệnh đề quan hệ..); Phát âm (cách phân biệt các cặp âm) hay cách viết CV, cover letter, email.. "            
+
+        /! end of tab_b
+      /! end of tab content
+    /! end of container
+  /! end of solutions
+
+
 
 #team.team
   .container.text-center
     h2
-      | TEAM
+      | INSTRUCTORS
     hr.under-heading
     .team-member
       .image-container
