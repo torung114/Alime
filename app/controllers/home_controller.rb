@@ -8,6 +8,12 @@ class HomeController < ApplicationController
 		redirect_to root_path, notice: "Thank you for contacting us."
 	end
 
+	def subcribe
+		email = params[:email]
+		ContactMailer.subcribe(email).deliver
+		redirect_to root_path, notice: "Thank you for contacting us."
+	end
+
 	def contact_email
 		redirect_to "https://share-mail03.nhanhoa.com:2096/"
 	end

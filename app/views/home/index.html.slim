@@ -239,14 +239,15 @@ header#header
       | UPDATES
     p.under-heading
       | Đăng ký nhận thông tin về khóa học, chương trình, ưu đãi hoặc tài liệu học tiếng Anh từ Alime.
-    form#SignupForm[data-toggle="validator"]
+    = simple_form_for :contact, url: subcribe_path, html: {id: "SignupForm"}, method: "post"
       .form-group
-        input#email.form-control[type="email" placeholder="Email" required]
+        input#email.form-control type="email" placeholder="Email" required="" name="email"
       .form-group
-        button.button-small-solid[type="submit"]
-          | Đăng ký
+        input.button-small-solid type="submit" value="ĐĂNG KÝ"
+        / button.button-small-solid[type="submit"] Submit
       .form-message
         #msgSubmit.h3.text-center.hidden
+
 #contact.contact
   .container.text-center
     h2

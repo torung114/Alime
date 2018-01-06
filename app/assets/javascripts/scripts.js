@@ -173,58 +173,6 @@
     });
   
   
-  /* SIGNUP FORM */
-    $("#SignupForm").validator().on("submit", function(event) {
-      if (event.isDefaultPrevented()) {
-            // handle the invalid form...
-            formError();
-            submitMSG(false, "Check if all fields are filled in!");
-        } else {
-            // everything looks good!
-            event.preventDefault();
-            submitForm();
-        }
-    });
-
-    function submitForm() {
-        // initiate variables with form content
-        var email = $("#email").val();
-    
-        $.ajax({
-            type: "POST",
-            url: "php/signupform-process.php",
-            data: "&email=" + email, 
-            success: function(text) {
-                if (text == "success") {
-                    formSuccess();
-                } else {
-                    formError();
-                    submitMSG(false, text);
-                }
-            }
-        });
-  }
-
-    function formSuccess() {
-        $("#SignupForm")[0].reset();
-        submitMSG(true, "You Are Signed Up!")
-    }
-
-    function formError() {
-        $("#SignupForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
-            $(this).removeClass();
-        });
-  }
-
-    function submitMSG(valid, msg) {
-        if (valid) {
-            var msgClasses = "h3 text-center tada animated text-success";
-        } else {
-            var msgClasses = "h3 text-center text-danger";
-        }
-        $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
-    }
-  
   /* REMOVES LONG FOCUS ON BUTTONS */
   $(".button, a, button").mouseup(function(){
     $(this).blur();

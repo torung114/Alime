@@ -1467,7 +1467,7 @@ header .header-content .fa-angle-down:hover {
   -webkit-appearance: none; /* removes inner shadow on form inputs on ios safari */
 }
 
-.newsletter form button {
+.newsletter form input[type=submit] {
   display: inline-block;
   height: 42px;
   padding-right: 35px;
@@ -1479,6 +1479,7 @@ header .header-content .fa-angle-down:hover {
   font: 500 15px/0.1em "Montserrat", sans-serif;
     -webkit-transition: background-color .3s ease, color .3s ease;
     -moz-transition: background-color .3s ease, color .3s ease;
+  padding-top: 6px;
 }
 
 .newsletter form button:hover {
