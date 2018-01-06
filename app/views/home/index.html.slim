@@ -125,38 +125,6 @@ header#header
           p
             | Khóa học 10 buổi trải nghiệm "hiếm có" dành cho chuyên viên IT! (09/01 - 07/02)
           
-/ #about.about.clearfix
-/   .about-image-pane
-/     = image_tag("about-1.png")
-
-/   .about-text-pane
-/     .about-text-pane-holder.clearfix
-/       h2.text-center
-/         | ABOUT
-/       hr.under-heading
-/       p
-/         | Khóa học SEEDS được thiết kế dành cho những người đang hoặc sẽ trở thành chuyên gia trong lĩnh vực IT nhưng khả năng ngôn ngữ còn hạn chế để đáp ứng cho môi trường làm việc quốc tế.
-/       p 
-/         | Thông qua khóa học, bên cạnh hiểu được những cấu trúc cơ bản và phát triển khả năng phát âm Tiếng Anh, học viên sẽ cảm thấy thích thú vì kiến thức thu được có thể vận dụng ngay trong công việc và cuộc sống hàng ngày một cách linh hoạt.
-/       p 
-/         | Nắm bắt được nhu cầu của cộng đồng IT qua khảo sát, chúng tôi đặc biệt lựa chọn chủ đề giảng dạy như sau:
-/       ul
-/         li
-/           | Experienced team of software and business developers
-/         li
-/           | Skill-set ranges from design and development to marketing 
-/         li
-/           | Our mission is to create reliable bussiness applications
-      
-      / .progress
-      /   .progress-bar.progress-bar-success[role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 100%"]
-      /     |  Software Development 100% 
-      / .progress
-      /   .progress-bar.progress-bar-success[role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 90%"]
-      /     |  Business Analysis 90% 
-      / .progress
-      /   .progress-bar.progress-bar-success[role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 95%"]
-      /     |  Data Acquisition 95% 
 #about.about.clearfix
   #solutions.solutions style="padding-top:0;"
     .container
@@ -200,34 +168,30 @@ header#header
         #tab_details.tab-pane.tab-b.fade
           .row
             .col-md-6
-              img.img-responsive alt=("solutions image") src="http://placehold.it/814x495/3a3a3a/fff/" /
+              img.img-responsive alt=("solutions image") src="http://placehold.it/814x800/3a3a3a/fff/" /
             .col-md-6
               .right-pane
-                .p "Nắm bắt được nhu cầu của cộng đồng IT qua khảo sát, chúng tôi đặc biệt lựa chọn chủ đề giảng dạy như sau:
-                .title Listening - Speaking Focus (Beginner level)
-                .text 1. Friends
-                .text 2. Food
-                .text 3. Jobs
-                .text 4. Travel
-                .text 5. Relationships
-                .text 6. Shopping
-
-                .title Reading - Writing Focus (Intermediate level)
-                .text 7. Career
-                .text 8. Personal Skills
-                .text 9. Business Communications
-                .text 10. Technology
-
+                p Nắm bắt được nhu cầu của cộng đồng IT qua khảo sát, chúng tôi đặc biệt lựa chọn chủ đề giảng dạy như sau:
+                strong.title Listening - Speaking Focus (Beginner level)
+                ul.tab-over-view-list 
+                  li.text 1. Friends
+                  li.text 2. Food
+                  li.text 3. Jobs
+                  li.text 4. Travel
+                  li.text 5. Relationships
+                  li.text 6. Shopping
+                strong.title Reading - Writing Focus (Intermediate level)
+                ul.tab-over-view-list 
+                  li.text 7. Career
+                  li.text 8. Personal Skills
+                  li.text 9. Business Communications
+                  li.text 10. Technology
                 p 4 kỹ năng Nghe - Nói - Đọc - Viết (Listening - Speaking - Reading - Writing) được rèn luyện trong từng buổi học, tuy nhiên mỗi buổi học sẽ dồn trọng tâm cho 2 kĩ năng như chú thích trên.
-
                 p Khóa học bao gồm các bài giảng về Ngữ pháp (cấu trúc câu, 7 thì cơ bản trong tiếng Anh, câu bị động, mệnh đề quan hệ..); Phát âm (cách phân biệt các cặp âm) hay cách viết CV, cover letter, email.. "            
-
         /! end of tab_b
       /! end of tab content
     /! end of container
   /! end of solutions
-
-
 
 #team.team
   .container.text-center
@@ -300,11 +264,11 @@ header#header
     h2
       | CONTACT
     p
-      | "Nếu bạn có câu hỏi hoặc đã sẵn sàng chinh phục tiếng Anh cùng Alime, xin hãy liên hệ với đội ngũ Alime tại:
+      | Nếu bạn có câu hỏi hoặc đã sẵn sàng chinh phục tiếng Anh cùng Alime, xin hãy liên hệ với đội ngũ Alime tại:
     ul.list-unstyled.list-inline
       li
         i.fa.fa-map-marker[aria-hidden="true"]
-        | KiCoworking Space, Times Tower building, Le Van Luong, Cau Giay, Hanoi
+        | Lê Văn Lương, Cầu Giấy, Hà Nội
       li
         i.fa.fa-phone[aria-hidden="true"]
         a.phone-number[href="tel:0977773676"]
@@ -312,10 +276,10 @@ header#header
       li
         i.fa.fa-envelope-o[aria-hidden="true"]
         a[href="mailto:thienanh92@gmail.com"]
-          | thienanh92@gmail.com
+          | contact@alime.vn
       li
         i.fa.fa-chrome[aria-hidden="true"]
-        a[href="alime.vn"]
+        a href="http://alime.vn"
           | alime.vn
     .row
       .col-md-6
