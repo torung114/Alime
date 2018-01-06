@@ -7,4 +7,9 @@ class HomeController < ApplicationController
 		ContactMailer.email(contact).deliver
 		redirect_to root_path, notice: "Thank you for contacting us."
 	end
+
+	def contact_email
+		redirect_to "https://share-mail03.nhanhoa.com:2096/"
+	end
+
 end
