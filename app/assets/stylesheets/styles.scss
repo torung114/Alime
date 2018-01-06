@@ -32,7 +32,7 @@
 /*****************************************
 Fonts:
 - Headings: Montserrat: 300,500,600
-- Body: Khula: 300,400,600
+- Body: Montserrat: 300,400,600
 
 Colors:
 - Default color: #464646 dark gray
@@ -47,7 +47,7 @@ Colors:
 /******************************/
 body {
   color: #464646;
-  font: 400 16px/1.6em "Khula", sans-serif;
+  font: 400 16px/1.6em "Montserrat", sans-serif;
 }
 
 h1 {
@@ -71,7 +71,7 @@ h5 {
 }
 
 .form-control {
-  font: 400 16px/1.6em "Khula", sans-serif;
+  font: 400 16px/1.6em "Montserrat", sans-serif;
 }
 
 a {
@@ -328,7 +328,7 @@ p.under-heading {
 .navbar .nav.navbar-nav li a {
   color: #fff;
   opacity: 0.8;
-  font: 400 15px/1em "Khula", sans-serif; 
+  font: 400 15px/1em "Montserrat", sans-serif; 
 }
 
 .navbar .nav.navbar-nav li a:hover,
@@ -404,7 +404,7 @@ header .header-content .swiper-container-header {
 }
   
 header .swiper-container-header .swiper-slide.first .slider-background {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), asset-url("slider-bg-1.jpg") center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), asset-url("slider-bg-3.jpg") center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -420,7 +420,7 @@ header .swiper-container-header .swiper-slide.second .slider-background {
 }
 
 header .swiper-container-header .swiper-slide.third .slider-background {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), asset-url("slider-bg-3") center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), asset-url("slider-bg-1") center no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -453,7 +453,7 @@ header .header-content p.heading-paragraph {
   margin-top: 10px;
   margin-right: 10px;
   margin-left: 10px;
-  font: 300 26px/1.4em "Khula", sans-serif;
+  font: 300 26px/1.4em "Montserrat", sans-serif;
   color: #fff;
 }
 
@@ -945,7 +945,7 @@ header .header-content .fa-angle-down:hover {
 .pricing .pricing-pane .price {
   margin-top: 0px;
   margin-bottom: 0px;
-  font: 300 60px/1em "Khula", sans-serif;
+  font: 300 60px/1em "Montserrat", sans-serif;
 }
 
 .pricing .pricing-pane p {
@@ -1008,7 +1008,7 @@ header .header-content .fa-angle-down:hover {
     padding: 12px 28px 10px 0px;
     background-color: #ff631e;
   color: #fff;
-  font: 400 14px/0.6em "Khula", sans-serif;
+  font: 400 14px/0.6em "Montserrat", sans-serif;
     -webkit-transform: rotate(45deg) translate3d(0, 0, 0);
     -moz-transform: rotate(45deg) translate3d(0, 0, 0);
     -ms-transform: rotate(45deg) translate3d(0, 0, 0);
@@ -1159,11 +1159,11 @@ header .header-content .fa-angle-down:hover {
 .project-details-container .project-quote p {
   margin-top: 16px;
   margin-bottom: 8px;
-  font: italic 400 16px/1.6em "Khula", sans-serif;
+  font: italic 400 16px/1.6em "Montserrat", sans-serif;
 }
 
 .project-details-container .project-quote span {
-  font: 400 16px/1.6em "Khula", sans-serif;
+  font: 400 16px/1.6em "Montserrat", sans-serif;
 }
 
 .project-details-container .button-outline,
@@ -1222,7 +1222,7 @@ header .header-content .fa-angle-down:hover {
 }
 
 .testimonials p {
-  font: 300 18px/1.6em "Khula", sans-serif;
+  font: 300 18px/1.6em "Montserrat", sans-serif;
 }
 
 .testimonials h4 {
@@ -1300,7 +1300,7 @@ header .header-content .fa-angle-down:hover {
   padding-top: 6px;
   background-color: #ff631e;
   color: #fff;
-  font: 400 13px/1.6em "Khula", sans-serif;
+  font: 400 13px/1.6em "Montserrat", sans-serif;
   text-align: left;
 }
 
@@ -1646,13 +1646,13 @@ header .header-content .fa-angle-down:hover {
 .copyright span {
   color: #fff;
   opacity: 0.7;
-  font: 400 14px/1.2em "Khula", sans-serif;
+  font: 400 14px/1.2em "Montserrat", sans-serif;
   text-align: center;
 }
 
 .copyright a {
   margin-top: 0px;
-  font: 400 14px/1.2em "Khula", sans-serif;
+  font: 400 14px/1.2em "Montserrat", sans-serif;
 }
 
 
@@ -1748,7 +1748,8 @@ a:hover.back-to-top {
   
   header .header-content p.heading-paragraph {
     margin-top: 15px;
-    font: 300 30px/1.4em "Khula", sans-serif;
+    font-family: "Montserrat";
+    font-weight: 300;
   }
   
   .customers {
