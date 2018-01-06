@@ -70,6 +70,8 @@ header#header
         .row
           .col-lg-6
             .software-box.clearfix
+              br
+              br
               = image_tag("sf-giao-trinh.svg")
               h4
                 | Giáo trình
@@ -99,13 +101,16 @@ header#header
                 .swiper-slide
                   a.popup-link[href="http://placehold.it/797x669/3a3a3a/fff/" data-effect="fadeIn"]
                     / = image_tag("sf-sl-1.jpg", class: "img-responsive")
-                    img.img-responsive[src="http://placehold.it/797x669/3a3a3a/fff/" alt="software image"]
+                    = image_tag("ws-1.jpg", class: "img-responsive")
+                    / img.img-responsive[src="http://placehold.it/797x669/3a3a3a/fff/" alt="software image"]
                 .swiper-slide
                   a.popup-link[href="http://placehold.it/797x669/3a3a3a/fff/" data-effect="fadeIn"]
-                    img.img-responsive[src="http://placehold.it/797x669/3a3a3a/fff/" alt="software image"]
+                    = image_tag("ws-2.jpg", class: "img-responsive")
+                    / img.img-responsive[src="http://placehold.it/797x669/3a3a3a/fff/" alt="software image"]
                 .swiper-slide
                   a.popup-link[href="http://placehold.it/797x669/3a3a3a/fff/" data-effect="fadeIn"]
-                    img.img-responsive[src="http://placehold.it/797x669/3a3a3a/fff/" alt="software image"]
+                    = image_tag("ws-3.jpg", class: "img-responsive")
+                    / img.img-responsive[src="http://placehold.it/797x669/3a3a3a/fff/" alt="software image"]
               .swiper-pagination
 #products.products
   .container.text-center
@@ -202,9 +207,10 @@ header#header
       .image-container
         = image_tag("mem-tarah.jpg")
         .hover-overlay
-          p
-            | Experienced manager with a successful background in design, print and project management.
-          .social-links
+          p Founder of Alime.
+          p Project Manager.
+          p Smile Addict. 
+          / .social-links
             a[href="#your-link-here"]
               span.fa-stack
                 i.fa.fa-circle.fa-stack-2x
@@ -225,9 +231,10 @@ header#header
       .image-container
         = image_tag("mem-hien.jpg")
         .hover-overlay
-          p
-            | Passionate developer with awesome programming skills. Loves writing clean and efficient code.
-          .social-links
+          p Co-founder of Alime.
+          p Passionate about teaching.
+          p Experience in IT industry.
+          / .social-links
             a[href="#your-link-here"]
               span.fa-stack
                 i.fa.fa-circle.fa-stack-2x
