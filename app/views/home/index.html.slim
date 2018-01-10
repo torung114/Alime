@@ -1,351 +1,353 @@
-/ .spinner-wrapper
-/   .spinner
-/     .bounce1
-/     .bounce2
-/     .bounce3
-.navbar.navbar-default.navbar-fixed-top[role="navigation"]
-  .container
-    .row
-      .navbar-header.page-scroll
-        button.navbar-toggle.collapsed[type="button" data-toggle="collapse" data-target="#myNavbar"]
-          span.sr-only
-            | Toggle navigation
-          span.icon-bar
-          span.icon-bar
-          span.icon-bar
-        a.navbar-brand.page-scroll[href="header"]
-          / = image_tag("logo.svg")
-          = image_tag("logo.png")
-      #myNavbar.navbar-collapse.collapse
-        ul.nav.navbar-nav.navbar-right
-          li.active
-            a.page-scroll href="#header" Hello
-          li
-            a.page-scroll href="#solutions" Why us?
-          li
-            a.page-scroll[href="#products"] Course
-          li
-            a.page-scroll[href="#about"] About
-          li
-            a.page-scroll[href="#team"] Instructors
-          li
-            a.page-scroll[href="#contact"] Contact
-header#header
-  .flex-container-wrapper
-    .header-content
-      .swiper-container-header
-        .swiper-wrapper
-          .swiper-slide.first
-            .slider-background
-
-          .swiper-slide.second
-            .slider-background
-
-          .swiper-slide.third
-            .slider-background
-
-      .content-overlay
-        .container
-          .row
-            h1.slogan
-              | Learn with Alime, Grow like a Charm
-            p.heading-paragraph
-              | Chúng tôi tự hào xây những cây cầu cho người Việt trẻ vươn tầm thế giới.
-            a.button-solid.page-scroll[href="#solutions"]
-              | Why Us?
-            a.page-scroll[href="#solutions"]
-              i.fa.fa-angle-down.fa-3x
-#solutions.solutions
-  .container
-    h2
-      | WHY US?
-    hr.under-heading
-    .solutions-tabs
-      ul.nav.nav-pills.nav-justified
-        li.active
-          a[href="#tab_a" data-toggle="tab"]
-            | Khác biệt và dành riêng cho bạn
-    .tab-content
-      #tab_a.tab-pane.tab-a.fade.in.active
-        .row
-          .col-lg-6
-            .software-box.clearfix
-              br.hide-on-mobile
-              br.hide-on-mobile
-              = image_tag("sf-giao-trinh.svg")
-              h4
-                | Giáo trình
-              p
-                | Giáo trình được nghiên cứu chọn lọc dành riêng cho lĩnh vực IT (Information System)
-            .software-box.clearfix
-              = image_tag("sf-ung-dung.svg")
-              h4
-                | Ứng dụng
-              p
-                | Phương pháp đặc biệt với tính ứng dụng thực tế cao trong công việc và cuộc sống hàng ngày
-            .software-box.clearfix
-              = image_tag("sf-mo-hinh.svg")
-              h4
-                | Mô hình
-              p
-                | Mô hình tối ưu cho sự phát triển ngôn ngữ của từng cá nhân
-            .software-box.clearfix
-              = image_tag("sf-moi-truong.svg")
-              h4
-                | Môi trường
-              p
-                | 100% học viên học tập và làm việc trong ngành, tạo nên cộng đồng IT mạnh mẽ hỗ trợ lẫn nhau
-          .col-lg-6
-            .my-swiper-container
-              .swiper-wrapper
-                .swiper-slide
-                  a
-                    = image_tag("ws-1.jpg", class: "img-responsive")
-                .swiper-slide
-                  a
-                    = image_tag("ws-2.jpg", class: "img-responsive")
-                .swiper-slide
-                  a
-                    = image_tag("ws-3.jpg", class: "img-responsive")
-              .swiper-pagination
-#products.products
-  .container.text-center
-    h2
-      | COURSE
-    hr.under-heading
-    .row
-      .col-md-10.col-md-offset-1
-        .product-container.first
-          a.popup-with-move-anim[href="#product-1"]
-
-          .image-container
-            = image_tag("course-1.jpg")
-            / img.img-responsive[src="http://placehold.it/706x398/3a3a3a/fff/" alt="product image"]
-          h4
-            | SEEDS 
-          p
-            | Khóa học 10 buổi trải nghiệm "hiếm có" dành cho chuyên viên IT! (09/01 - 07/02)
-#about.about.clearfix
-  #solutions.solutions style="padding-top:0;padding-bottom:0;"
+- cache 'index', expires_in: 2.hours do
+  / .spinner-wrapper
+  /   .spinner
+  /     .bounce1
+  /     .bounce2
+  /     .bounce3
+  .navbar.navbar-default.navbar-fixed-top[role="navigation"]
     .container
-      h2 ABOUT
-      hr.under-heading/
-      /! Tabs
+      .row
+        .navbar-header.page-scroll
+          button.navbar-toggle.collapsed[type="button" data-toggle="collapse" data-target="#myNavbar"]
+            span.sr-only
+              | Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand.page-scroll[href="header"]
+            / = image_tag("logo.svg")
+            = image_tag("logo.png")
+        #myNavbar.navbar-collapse.collapse
+          ul.nav.navbar-nav.navbar-right
+            li.active
+              a.page-scroll href="#header" Hello
+            li
+              a.page-scroll href="#solutions" Why us?
+            li
+              a.page-scroll[href="#products"] Course
+            li
+              a.page-scroll[href="#about"] About
+            li
+              a.page-scroll[href="#team"] Instructors
+            li
+              a.page-scroll[href="#contact"] Contact
+  header#header
+    .flex-container-wrapper
+      .header-content
+        .swiper-container-header
+          .swiper-wrapper
+            .swiper-slide.first
+              .slider-background
+
+            .swiper-slide.second
+              .slider-background
+
+            .swiper-slide.third
+              .slider-background
+
+        .content-overlay
+          .container
+            .row
+              h1.slogan
+                | Learn with Alime, Grow like a Charm
+              p.heading-paragraph
+                | Chúng tôi tự hào xây những cây cầu cho người Việt trẻ vươn tầm thế giới.
+              a.button-solid.page-scroll[href="#solutions"]
+                | Why Us?
+              a.page-scroll[href="#solutions"]
+                i.fa.fa-angle-down.fa-3x
+  #solutions.solutions
+    .container
+      h2
+        | WHY US?
+      hr.under-heading
       .solutions-tabs
         ul.nav.nav-pills.nav-justified
           li.active
-            a data-toggle="tab" href="#tab_overview"  OVERVIEW
-          li
-            a data-toggle="tab" href="#tab_details"  DETAILS
-      /! Tab Content
+            a[href="#tab_a" data-toggle="tab"]
+              | Khác biệt và dành riêng cho bạn
       .tab-content
-        /! Tab_a
-        #tab_overview.tab-pane.tab-a.fade.in.active
+        #tab_a.tab-pane.tab-a.fade.in.active
           .row
             .col-lg-6
-              ul.tab-over-view-list 
-                li Khóa học SEEDS được thiết kế dành cho những người đang hoặc sẽ trở thành chuyên gia trong lĩnh vực IT nhưng khả năng ngôn ngữ còn hạn chế để đáp ứng cho môi trường làm việc quốc tế.
-                br
-                li Thông qua khóa học, bên cạnh hiểu được những cấu trúc cơ bản và phát triển khả năng phát âm Tiếng Anh, học viên sẽ cảm thấy thích thú vì kiến thức thu được có thể vận dụng ngay trong công việc và cuộc sống hàng ngày một cách linh hoạt.
+              .software-box.clearfix
+                br.hide-on-mobile
+                br.hide-on-mobile
+                = image_tag("sf-giao-trinh.svg")
+                h4
+                  | Giáo trình
+                p
+                  | Giáo trình được nghiên cứu chọn lọc dành riêng cho lĩnh vực IT (Information System)
+              .software-box.clearfix
+                = image_tag("sf-ung-dung.svg")
+                h4
+                  | Ứng dụng
+                p
+                  | Phương pháp đặc biệt với tính ứng dụng thực tế cao trong công việc và cuộc sống hàng ngày
+              .software-box.clearfix
+                = image_tag("sf-mo-hinh.svg")
+                h4
+                  | Mô hình
+                p
+                  | Mô hình tối ưu cho sự phát triển ngôn ngữ của từng cá nhân
+              .software-box.clearfix
+                = image_tag("sf-moi-truong.svg")
+                h4
+                  | Môi trường
+                p
+                  | 100% học viên học tập và làm việc trong ngành, tạo nên cộng đồng IT mạnh mẽ hỗ trợ lẫn nhau
             .col-lg-6
-              = image_tag("about-1.jpg", style: "width:100%;height:100%;")
-              /! end of image gallery swiper
-        /! end of tab_a
-        /! Tab_b
-        #tab_details.tab-pane.tab-b.fade
-          .row
-            .col-md-6
-              = image_tag("about-2.jpg", class: "img-responsive")
-            .col-md-6
-              .right-pane
-                p Nắm bắt được nhu cầu của cộng đồng IT qua khảo sát, chúng tôi đặc biệt lựa chọn chủ đề giảng dạy như sau:
-                strong.title.mgl-24 Listening - Speaking Focus (Beginner level)
-                ul.tab-over-view-list 
-                  li.text 1. Friends
-                  li.text 2. Food
-                  li.text 3. Jobs
-                  li.text 4. Travel
-                  li.text 5. Relationships
-                  li.text 6. Shopping
-                strong.title.mgl-24 Reading - Writing Focus (Intermediate level)
-                ul.tab-over-view-list 
-                  li.text 7. Career
-                  li.text 8. Personal Skills
-                  li.text 9. Business Communications
-                  li.text 10. Technology
-                p 4 kỹ năng Nghe - Nói - Đọc - Viết (Listening - Speaking - Reading - Writing) được rèn luyện trong từng buổi học, tuy nhiên mỗi buổi học sẽ dồn trọng tâm cho 2 kĩ năng như chú thích trên.
-                p Khóa học bao gồm các bài giảng về Ngữ pháp (cấu trúc câu, 7 thì cơ bản trong tiếng Anh, câu bị động, mệnh đề quan hệ..); Phát âm (cách phân biệt các cặp âm) hay cách viết CV, cover letter, email..         
-        /! end of tab_b
-      /! end of tab content
-    /! end of container
-  /! end of solutions
-#team.team
-  .container.text-center
-    h2
-      | INSTRUCTORS
-    hr.under-heading
-    .team-member
-      .image-container
-        = image_tag("mem-tarah.jpg")
-        .hover-overlay
-          p Founder of Alime.
-          p Project Manager.
-          p Smile Addict. 
-          / .social-links
-            a[href="#your-link-here"]
-              span.fa-stack
-                i.fa.fa-circle.fa-stack-2x
-                i.fa.fa-facebook.fa-stack-1x.fa-inverse
-            a[href="#your-link-here"]
-              span.fa-stack
-                i.fa.fa-circle.fa-stack-2x
-                i.fa.fa-linkedin.fa-stack-1x.fa-inverse
-      h4
-        | Anh (Tarah) Nguyen
-      p
-        | Giảng viên
-      p
-        | 7.5 IELTS (2013)
-      p
-        | Tốt nghiệp đại học tại Mỹ
-    .team-member
-      .image-container
-        = image_tag("mem-hien.jpg")
-        .hover-overlay
-          p Co-founder of Alime.
-          p Passionate about teaching.
-          p Experience in IT industry.
-          / .social-links
-            a[href="#your-link-here"]
-              span.fa-stack
-                i.fa.fa-circle.fa-stack-2x
-                i.fa.fa-facebook.fa-stack-1x.fa-inverse
-            a[href="#your-link-here"]
-              span.fa-stack
-                i.fa.fa-circle.fa-stack-2x
-                i.fa.fa-linkedin.fa-stack-1x.fa-inverse
-      h4
-        | Hien (Sheila) Nguyen
-      p
-        | Giảng viên
-      p
-        | 7.0 IELTS (2013)
-      p
-        | Tốt nghiệp đại học tại Mỹ
-    
-.newsletter
-  .container.text-center
-    h2
-      | UPDATES
-    p.under-heading
-      | Đăng ký nhận thông tin về khóa học, chương trình, ưu đãi hoặc tài liệu học tiếng Anh từ Alime.
-    = simple_form_for :contact, url: subcribe_path, html: {id: "SignupForm"}, method: "post"
-      .form-group
-        input#email.form-control type="email" placeholder="Email" required="" name="email"
-      .form-group
-        input.button-small-solid type="submit" value="ĐĂNG KÝ"
-        / button.button-small-solid[type="submit"] Submit
-      .form-message
-        #msgSubmit.h3.text-center.hidden
+              .my-swiper-container
+                .swiper-wrapper
+                  .swiper-slide
+                    a
+                      = image_tag("ws-1.jpg", class: "img-responsive")
+                  .swiper-slide
+                    a
+                      = image_tag("ws-2.jpg", class: "img-responsive")
+                  .swiper-slide
+                    a
+                      = image_tag("ws-3.jpg", class: "img-responsive")
+                .swiper-pagination
+  #products.products
+    .container.text-center
+      h2
+        | COURSE
+      hr.under-heading
+      .row
+        .col-md-10.col-md-offset-1
+          .product-container.first
+            a.popup-with-move-anim[href="#product-1"]
 
-#contact.contact
-  .container.text-center
-    h2
-      | CONTACT
-    p
-      | Nếu bạn có câu hỏi hoặc đã sẵn sàng chinh phục tiếng Anh cùng Alime, xin hãy liên hệ với đội ngũ Alime tại:
-    ul.list-unstyled.list-inline
-      li
-        i.fa.fa-map-marker[aria-hidden="true"]
-        | Lê Văn Lương, Cầu Giấy, Hà Nội
-      li
-        i.fa.fa-phone[aria-hidden="true"]
-        a.phone-number[href="tel:0977773676"]
-          | +84 977 773 676
-      li
-        i.fa.fa-envelope-o[aria-hidden="true"]
-        a[href="mailto:contact@alime.vn"]
-          | contact@alime.vn
-      li
-        i.fa.fa-chrome[aria-hidden="true"]
-        a href="http://alime.vn"
-          | alime.vn
-    .row
-      .col-md-6
-        .map-responsive
-          iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.7552531722363!2d105.79902981543137!3d21.00244569405081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135aca240da3cd5%3A0xba94a781b1816076!2sTimes+Tower!5e0!3m2!1svi!2s!4v1515247731123" allowfullscreen
-      .col-md-6
-        = simple_form_for :contact, url: send_contact_path, html: {id: "ContactForm"}, method: "post"
-          .form-group.same-line
-            input#cfirstname.form-control type="text" placeholder="Name" required="" name="name"
-          .form-group.same-line.middle
-            input#clastname.form-control type="text" placeholder="Phone" required="" name="phone"
-          .form-group.same-line
-            input#cemail.form-control type="email" placeholder="Email" required="" name="email"
-          .form-group
-            textarea#cmessage.form-control placeholder="Write your message here" rows="4" required="" name="message"
-          .form-group
-            input.button-small-solid type="submit" value="SUBMIT"
-          .form-message
-            #cmsgSubmit.h3.text-center.hidden
-.footer
-  .container
-    .row
-      .col-md-4.footer-section
+            .image-container
+              = image_tag("course-1.jpg")
+              / img.img-responsive[src="http://placehold.it/706x398/3a3a3a/fff/" alt="product image"]
+            h4
+              | SEEDS 
+            p
+              | Khóa học 10 buổi trải nghiệm "hiếm có" dành cho chuyên viên IT! (09/01 - 07/02)
+  #about.about.clearfix
+    #solutions.solutions style="padding-top:0;padding-bottom:0;"
+      .container
+        h2 ABOUT
+        hr.under-heading/
+        /! Tabs
+        .solutions-tabs
+          ul.nav.nav-pills.nav-justified
+            li.active
+              a data-toggle="tab" href="#tab_overview"  OVERVIEW
+            li
+              a data-toggle="tab" href="#tab_details"  DETAILS
+        /! Tab Content
+        .tab-content
+          /! Tab_a
+          #tab_overview.tab-pane.tab-a.fade.in.active
+            .row
+              .col-lg-6
+                ul.tab-over-view-list 
+                  li Khóa học SEEDS được thiết kế dành cho những người đang hoặc sẽ trở thành chuyên gia trong lĩnh vực IT nhưng khả năng ngôn ngữ còn hạn chế để đáp ứng cho môi trường làm việc quốc tế.
+                  br
+                  li Thông qua khóa học, bên cạnh hiểu được những cấu trúc cơ bản và phát triển khả năng phát âm Tiếng Anh, học viên sẽ cảm thấy thích thú vì kiến thức thu được có thể vận dụng ngay trong công việc và cuộc sống hàng ngày một cách linh hoạt.
+              .col-lg-6
+                = image_tag("about-1.jpg", style: "width:100%;height:100%;")
+                /! end of image gallery swiper
+          /! end of tab_a
+          /! Tab_b
+          #tab_details.tab-pane.tab-b.fade
+            .row
+              .col-md-6
+                = image_tag("about-2.jpg", class: "img-responsive")
+              .col-md-6
+                .right-pane
+                  p Nắm bắt được nhu cầu của cộng đồng IT qua khảo sát, chúng tôi đặc biệt lựa chọn chủ đề giảng dạy như sau:
+                  strong.title.mgl-24 Listening - Speaking Focus (Beginner level)
+                  ul.tab-over-view-list 
+                    li.text 1. Friends
+                    li.text 2. Food
+                    li.text 3. Jobs
+                    li.text 4. Travel
+                    li.text 5. Relationships
+                    li.text 6. Shopping
+                  strong.title.mgl-24 Reading - Writing Focus (Intermediate level)
+                  ul.tab-over-view-list 
+                    li.text 7. Career
+                    li.text 8. Personal Skills
+                    li.text 9. Business Communications
+                    li.text 10. Technology
+                  p 4 kỹ năng Nghe - Nói - Đọc - Viết (Listening - Speaking - Reading - Writing) được rèn luyện trong từng buổi học, tuy nhiên mỗi buổi học sẽ dồn trọng tâm cho 2 kĩ năng như chú thích trên.
+                  p Khóa học bao gồm các bài giảng về Ngữ pháp (cấu trúc câu, 7 thì cơ bản trong tiếng Anh, câu bị động, mệnh đề quan hệ..); Phát âm (cách phân biệt các cặp âm) hay cách viết CV, cover letter, email..         
+          /! end of tab_b
+        /! end of tab content
+      /! end of container
+    /! end of solutions
+  #team.team
+    .container.text-center
+      h2
+        | INSTRUCTORS
+      hr.under-heading
+      .team-member
+        .image-container
+          = image_tag("mem-tarah.jpg")
+          .hover-overlay
+            p Founder of Alime.
+            p Project Manager.
+            p Smile Addict. 
+            / .social-links
+              a[href="#your-link-here"]
+                span.fa-stack
+                  i.fa.fa-circle.fa-stack-2x
+                  i.fa.fa-facebook.fa-stack-1x.fa-inverse
+              a[href="#your-link-here"]
+                span.fa-stack
+                  i.fa.fa-circle.fa-stack-2x
+                  i.fa.fa-linkedin.fa-stack-1x.fa-inverse
         h4
-          | ALIME
+          | Anh (Tarah) Nguyen
         p
-          | Learn with Alime, Grow like a Charm.
-      .col-md-4.footer-section
+          | Giảng viên
+        p
+          | 7.5 IELTS (2013)
+        p
+          | Tốt nghiệp đại học tại Mỹ
+      .team-member
+        .image-container
+          = image_tag("mem-hien.jpg")
+          .hover-overlay
+            p Co-founder of Alime.
+            p Passionate about teaching.
+            p Experience in IT industry.
+            / .social-links
+              a[href="#your-link-here"]
+                span.fa-stack
+                  i.fa.fa-circle.fa-stack-2x
+                  i.fa.fa-facebook.fa-stack-1x.fa-inverse
+              a[href="#your-link-here"]
+                span.fa-stack
+                  i.fa.fa-circle.fa-stack-2x
+                  i.fa.fa-linkedin.fa-stack-1x.fa-inverse
         h4
-          | Contact Details
+          | Hien (Sheila) Nguyen
         p
+          | Giảng viên
+        p
+          | 7.0 IELTS (2013)
+        p
+          | Tốt nghiệp đại học tại Mỹ
+      
+  .newsletter
+    .container.text-center
+      h2
+        | UPDATES
+      p.under-heading
+        | Đăng ký nhận thông tin về khóa học, chương trình, ưu đãi hoặc tài liệu học tiếng Anh từ Alime.
+      = simple_form_for :contact, url: subcribe_path, html: {id: "SignupForm"}, method: "post"
+        .form-group
+          input#email.form-control type="email" placeholder="Email" required="" name="email"
+        .form-group
+          input.button-small-solid type="submit" value="ĐĂNG KÝ"
+          / button.button-small-solid[type="submit"] Submit
+        .form-message
+          #msgSubmit.h3.text-center.hidden
+
+  #contact.contact
+    .container.text-center
+      h2
+        | CONTACT
+      p
+        | Nếu bạn có câu hỏi hoặc đã sẵn sàng chinh phục tiếng Anh cùng Alime, xin hãy liên hệ với đội ngũ Alime tại:
+      ul.list-unstyled.list-inline
+        li
+          i.fa.fa-map-marker[aria-hidden="true"]
           | Lê Văn Lương, Cầu Giấy, Hà Nội
-        p style="line-height:1;"
-          a.inverse[href="http://alime.vn"]
+        li
+          i.fa.fa-phone[aria-hidden="true"]
+          a.phone-number[href="tel:0977773676"]
+            | +84 977 773 676
+        li
+          i.fa.fa-envelope-o[aria-hidden="true"]
+          a[href="mailto:contact@alime.vn"]
             | contact@alime.vn
-      .col-md-4.footer-section
-        h4.last
-          | Social Networks
-          span style="font-weight:300;font-size:13px;"
-            |  (coming soon)
-        .social-icons-container
-          span.fa-stack.fa-lg alt="coming soon"
-            a href="#your-link-here"
-              i.fa.fa-circle.fa-stack-2x
-              i.fa.fa-facebook.fa-stack-1x.fa-inverse
-          span.fa-stack.fa-lg
-            a href="#your-link-here"
-              i.fa.fa-circle.fa-stack-2x
-              i.fa.fa-twitter.fa-stack-1x.fa-inverse
-          span.fa-stack.fa-lg
-            a href="#your-link-here"
-              i.fa.fa-circle.fa-stack-2x
-              i.fa.fa-google-plus.fa-stack-1x.fa-inverse
-          span.fa-stack.fa-lg
-            a href="#your-link-here"
-              i.fa.fa-circle.fa-stack-2x
-              i.fa.fa-instagram.fa-stack-1x.fa-inverse
-          span.fa-stack.fa-lg
-            a href="#your-link-here"
-              i.fa.fa-circle.fa-stack-2x
-              i.fa.fa-linkedin.fa-stack-1x.fa-inverse
-          span.fa-stack.fa-lg
-            a href="#your-link-here"
-              i.fa.fa-circle.fa-stack-2x
-              i.fa.fa-dribbble.fa-stack-1x.fa-inverse
-          span.fa-stack.fa-lg
-            a href="#your-link-here"
-              i.fa.fa-circle.fa-stack-2x
-              i.fa.fa-pinterest.fa-stack-1x.fa-inverse
-.copyright
-  .container.text-center
-    .row
-      .col-md-12
-        span
-          | Copyright © 
-        a.inverse[href="http://alime.vn"]
-          | alime.vn
-sass:
-  a.back-to-top
-    background-image: url("../images/up-arrow.png") no-repeat center 47%
+        li
+          i.fa.fa-chrome[aria-hidden="true"]
+          a href="http://alime.vn"
+            | alime.vn
+      .row
+        .col-md-6
+          .map-responsive
+            iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.7552531722363!2d105.79902981543137!3d21.00244569405081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135aca240da3cd5%3A0xba94a781b1816076!2sTimes+Tower!5e0!3m2!1svi!2s!4v1515247731123" allowfullscreen
+        .col-md-6
+          = simple_form_for :contact, url: send_contact_path, html: {id: "ContactForm"}, method: "post"
+            .form-group.same-line
+              input#cfirstname.form-control type="text" placeholder="Name" required="" name="name"
+            .form-group.same-line.middle
+              input#clastname.form-control type="text" placeholder="Phone" required="" name="phone"
+            .form-group.same-line
+              input#cemail.form-control type="email" placeholder="Email" required="" name="email"
+            .form-group
+              textarea#cmessage.form-control placeholder="Write your message here" rows="4" required="" name="message"
+            .form-group
+              input.button-small-solid type="submit" value="SUBMIT"
+            .form-message
+              #cmsgSubmit.h3.text-center.hidden
+  .footer
+    .container
+      .row
+        .col-md-4.footer-section
+          h4
+            | ALIME
+          p
+            | Learn with Alime, Grow like a Charm.
+        .col-md-4.footer-section
+          h4
+            | Contact Details
+          p
+            | Lê Văn Lương, Cầu Giấy, Hà Nội
+          p style="line-height:1;"
+            a.inverse[href="http://alime.vn"]
+              | contact@alime.vn
+        .col-md-4.footer-section
+          h4.last
+            | Social Networks
+            span style="font-weight:300;font-size:13px;"
+              |  (coming soon)
+          .social-icons-container
+            span.fa-stack.fa-lg alt="coming soon"
+              a href="#your-link-here"
+                i.fa.fa-circle.fa-stack-2x
+                i.fa.fa-facebook.fa-stack-1x.fa-inverse
+            span.fa-stack.fa-lg
+              a href="#your-link-here"
+                i.fa.fa-circle.fa-stack-2x
+                i.fa.fa-twitter.fa-stack-1x.fa-inverse
+            span.fa-stack.fa-lg
+              a href="#your-link-here"
+                i.fa.fa-circle.fa-stack-2x
+                i.fa.fa-google-plus.fa-stack-1x.fa-inverse
+            span.fa-stack.fa-lg
+              a href="#your-link-here"
+                i.fa.fa-circle.fa-stack-2x
+                i.fa.fa-instagram.fa-stack-1x.fa-inverse
+            span.fa-stack.fa-lg
+              a href="#your-link-here"
+                i.fa.fa-circle.fa-stack-2x
+                i.fa.fa-linkedin.fa-stack-1x.fa-inverse
+            span.fa-stack.fa-lg
+              a href="#your-link-here"
+                i.fa.fa-circle.fa-stack-2x
+                i.fa.fa-dribbble.fa-stack-1x.fa-inverse
+            span.fa-stack.fa-lg
+              a href="#your-link-here"
+                i.fa.fa-circle.fa-stack-2x
+                i.fa.fa-pinterest.fa-stack-1x.fa-inverse
+  .copyright
+    .container.text-center
+      .row
+        .col-md-12
+          span
+            | Copyright © 
+          a.inverse[href="http://alime.vn"]
+            | alime.vn
+  sass:
+    a.back-to-top
+      background-image: url("../images/up-arrow.png") no-repeat center 47%
+end
