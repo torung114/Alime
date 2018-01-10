@@ -10,16 +10,16 @@
     "use strict"; 
     
   /* PRELOADER */
-  $(window).load(function() {
-    var preloaderFadeOutTime = 500;
-    function hidePreloader() {
-      var preloader = $('.spinner-wrapper');
-      setTimeout(function() {
-        preloader.fadeOut(preloaderFadeOutTime);
-      }, 500);
-    }
-    hidePreloader();
-  });
+  // $(window).load(function() {
+  //   var preloaderFadeOutTime = 500;
+  //   function hidePreloader() {
+  //     var preloader = $('.spinner-wrapper');
+  //     setTimeout(function() {
+  //       preloader.fadeOut(preloaderFadeOutTime);
+  //     }, 500);
+  //   }
+  //   hidePreloader();
+  // });
   
   
   /* NAVBAR SCRIPTS */
@@ -134,7 +134,7 @@
     overflowY: 'auto',
 
     closeBtnInside: true,
-    preloader: false,
+    // preloader: false,
     
     midClick: true,
     removalDelay: 300,
